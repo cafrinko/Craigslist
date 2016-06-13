@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Craigslist</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/craigslist.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAa64UgheAS5DsSMeybmFfW59ohARtNEPA",
+        authDomain: "craigslist-20481.firebaseapp.com",
+        databaseURL: "https://craigslist-20481.firebaseio.com",
+        storageBucket: "craigslist-20481.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/craigslist.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>

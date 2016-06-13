@@ -1,0 +1,14 @@
+<li>
+  <img src={{post.image}}/>
+  <br>
+  <h2>Selling: {{post.title}}</h2>
+  <br>
+  <h3>For: ${{post.price}}</h3>
+  <br>
+  <p>Description: {{post.body}}</p>
+  <br>
+  <br>
+  <p>Posted on: {{post.date}}</p>
+</li>
+{{#link-to 'update' post.id}}Update{{/link-to}}
+<button {{action 'delete' post}}>Delete</button>

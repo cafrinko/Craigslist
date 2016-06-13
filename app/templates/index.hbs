@@ -1,0 +1,9 @@
+<h1>Craigslist</h1>
+
+<ul>
+  {{#each model as |post|}}
+    {{post-tile post=post destroyPost="destroyPost"}}
+  {{/each}}
+</ul>
+
+{{#link-to 'new-post-form'}}Add a Post{{/link-to}}
