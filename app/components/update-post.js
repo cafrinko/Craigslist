@@ -15,7 +15,6 @@ export default Ember.Component.extend({
         email: this.get('email')
       };
       this.sendAction('update', post, params);
-      this.sendAction('update', post, params);
     }
   }
 });
